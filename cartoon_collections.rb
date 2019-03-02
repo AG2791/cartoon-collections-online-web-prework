@@ -24,10 +24,10 @@ def long_planteer_calls(calls)
   end
 end
 
-cheese_types = ["cheddar", "gouda", "camembert"]
-def find_the_cheese
-  foods.find do |food|
-    cheese_types.include?(food)
+def find_the_cheese(foods)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+foods.find do |element|
+    cheese_types.include?(element)
   end
   
 end
